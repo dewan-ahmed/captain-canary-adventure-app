@@ -5,6 +5,8 @@ const port = process.env.PORT || 3000;
 // Serve static files
 app.use(express.static('public'));
 
+module.exports = app;
+
 app.get('/', (req, res) => {
     const podName = process.env.HOSTNAME || 'Unknown';
 
