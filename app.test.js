@@ -12,4 +12,10 @@ describe('Express App', () => {
     expect(response.text).toContain('Captain Canary\'s Adventures');
     expect(response.text).toContain('Pod Name:');
   });
+
+  afterAll(() => {
+    // Close the server after all tests are complete
+    app.close();
+  });
+  
 });
