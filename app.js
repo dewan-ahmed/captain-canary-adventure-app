@@ -5,8 +5,6 @@ const port = process.env.PORT || 3000;
 // Serve static files
 app.use(express.static('public'));
 
-module.exports = app;
-
 app.get('/', (req, res) => {
     const podName = process.env.HOSTNAME || 'Unknown';
 
@@ -41,7 +39,7 @@ app.get('/', (req, res) => {
                     } else {
                         img.src = '/canary-working.png';
                         btn.textContent = 'Go on Vacation!';
-                        text.innerHTML = 'Pod Name: ${podName}';
+                        text.innerHTML = 'Pod Name: ' + podName; // Fix: use proper concatenation
                     }
                 }
             </script>
@@ -57,6 +55,8 @@ app.get('/', (req, res) => {
     `);
 });
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
     console.log(`App listening at http://localhost:${port}`);
 });
+
+module.exports = { app, server };
