@@ -1,3 +1,6 @@
+const request = require('supertest');
+const app = require('./app.js'); 
+
 describe('Express App', () => {
   it('200ok', async () => {
    const response = await request(app).get('/');
