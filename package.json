@@ -3,10 +3,10 @@
   "version": "0.0.3",
   "description": "A simple nodejs app echoing hello world and a static version #. GitHub URL: https://github.com/dewan-ahmed/simple-nodejs-app",
   "main": "index.js",
-"scripts": {
-  "test": "jest",
-  "test:watch": "jest --watchAll"
-},
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dewan-ahmed/simple-nodejs-app.git"
@@ -20,7 +20,8 @@
   "dependencies": {
     "express": "^4.18.2"
   },
-  "keywords": [
-    "nodejs"
-  ]
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "keywords": ["nodejs"]
 }
