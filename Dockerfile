@@ -10,8 +10,8 @@ COPY . .
 # Install any needed packages specified in package.json
 RUN npm install
 
-# Make port 3000 available to the world outside this container
-EXPOSE 3000
+# Make port 3003 available to the world outside this container
+EXPOSE 3003
 
 # Define environment variable
 ENV NAME World
