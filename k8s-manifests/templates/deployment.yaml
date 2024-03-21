@@ -16,4 +16,4 @@ spec:
       - name: simple-nodejs-app
         image: northamerica-northeast1-docker.pkg.dev/ivory-pathway-408519/{{.Values.image.name}}:{{.Values.image.tag}}
         ports:
-        - containerPort: 3000
+        - containerPort: 3003
