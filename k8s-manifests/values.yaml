@@ -1,3 +1,6 @@
 image:
-  name: <+pipeline.variables.imageName>
-  tag: <+pipeline.variables.imageTag>
+  name: cca-app
+  tag: latest
+  
+#  name: <+pipeline.variables.imageName>
+#  tag: <+pipeline.variables.imageTag>
