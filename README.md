@@ -1,7 +1,5 @@
 # Captain Canary Adventure App
 
-REVERT THIS
-
 ## Introduction
 The Captain Canary Adventure App is a Node.js web application that showcases Captain Canary's adventures. It toggles between working and vacation modes and displays the Kubernetes pod name when deployed in a cluster.
 
